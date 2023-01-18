@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Numans");
+
+.login-errormessage {
+  display: flex;
+  width: 300px;
+  color: white;
+}
+
+.noneDisplay {
+  display: none;
+}
+
+.generalContainer {
+  font-family: "Numans", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  align-content: center;
+}
+
+.card2 {
+  margin-bottom: auto;
+  width: 70vh;
+}
+
+@media (max-width: 769px) {
+  .card2 {
+    width: 50vh;
+  }
+}
+
+.card-header h3 {
+  color: #d3448b;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.login_btn {
+  color: black;
+  background-color: #ffc312;
+  width: 100px;
+}
+
+.login_btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.links {
+  color: white;
+}
+
+.links a {
+  margin-left: 4px;
+}
+
+.button-back {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 15px;
+  background: #d3448b;
+  color: #fff;
+  padding: 13px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.button-back:hover {
+  background: #d3448b;
+  color: #000;
+}
+
+.button-back::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+
+.button-back:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(-45deg) scale(1, 1);
+}
