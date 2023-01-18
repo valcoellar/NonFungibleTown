@@ -1,0 +1,50 @@
+.user-dash-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  border-radius: 5px;
+  margin: 10px 0;
+  border-bottom: solid 1px #9e9e9e;
+}
+.user-dash-link {
+  color: rgba(251, 118, 219, 1);
+}
+.user-dash-link:hover {
+  color: rgba(211, 68, 139, 1);
+}
+.user-dash-card p {
+  margin: 0;
+  text-decoration: none;
+}
+.user-dash-id {
+  width: 260px;
+  margin: 0 5px;
+}
+.user-dash-name {
+  width: 100px;
+  margin: 0 5px;
+}
+
+@media (max-width: 1050px) {
+  .user-dash-name {
+    margin-right: 80px;
+  }
+}
+
+.user-dash-email {
+  width: 300px;
+  margin: 0 5px;
+}
+
+@media (max-width: 1050px) {
+  .user-dash-email {
+    display: none;
+  }
+}
+.user-dash-type {
+  width: 80px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
